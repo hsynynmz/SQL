@@ -4,11 +4,21 @@ This case study uses FLO omnichannel customer data to practice SQL through custo
 
 The dataset contains **19,945 customer records**. Each row represents a customer and includes online/offline purchase counts, customer value, first/last purchase dates, last order channel, and category-interest information.
 
-![FLO and Northwind practice overview](./assets/flo-northwind-overview.jpg)
+## Analysis Logic
+
+The original dataset overview separates online and offline customer activity. In the SQL exercises, those fields are combined to calculate overall purchase and revenue KPIs.
+
+```mermaid
+flowchart LR
+    A[Online Purchase Count] --> C[Total Purchases]
+    B[Offline Purchase Count] --> C
+    D[Online Customer Value] --> F[Total Revenue]
+    E[Offline Customer Value] --> F
+    C --> G[Average Revenue per Purchase]
+    F --> G
+```
 
 ## Dataset Overview
-
-![FLO dataset dictionary](./assets/flo-data-dictionary.jpg)
 
 | Column | Description |
 |---|---|
@@ -74,10 +84,9 @@ In the selected exercises, each full category-list combination is treated as one
 
 `SUM` · `ROUND` · `WHERE` · `AND` · `<>` · `LIKE` · `GROUP BY` · `ORDER BY` · `TOP` · `YEAR` · `MONTH`
 
-## Files
+## File
 
 - [`flo_case_study.sql`](./flo_case_study.sql) — selected FLO SQL solutions
-- [`assets/`](./assets/) — dataset reference visuals
 
 ## Data Source
 
@@ -86,7 +95,7 @@ The exercises are based on Miuul Data Analytics Bootcamp practice materials. The
 - [FLO SQL Practice - Exercise 1](https://import.cdn.thinkific.com/682699/IyM8YQeTWi4kzxKSIzCw_A%20%C3%96dev%20Al%C4%B1%C5%9Ft%C4%B1rma%201.pdf)
 - [FLO SQL Practice - Exercise 2](https://import.cdn.thinkific.com/682699/SWEnDMTaT2CjLNizUVnq_A%20%C3%96dev%20Al%C4%B1%C5%9Ft%C4%B1rma%202.pdf)
 
-> SQL queries and explanations in this repository are my own work. The raw dataset is not redistributed here.
+> SQL queries and explanations in this repository are my own work. The raw dataset and course visuals are not redistributed here.
 
 ## Author
 
