@@ -13,7 +13,7 @@ The focus is not only on writing queries, but also on using SQL to answer busine
 
 ## SQL Topics Used
 
-`SELECT` · `WHERE` · `AND` · `LIKE` · `SUM` · `COUNT` · `ROUND` · `GROUP BY` · `ORDER BY` · `TOP` · `YEAR` · `MONTH` · `INNER JOIN` · `LEFT JOIN`
+`SELECT` · `WHERE` · `AND` · `LIKE` · `SUM` · `ROUND` · `GROUP BY` · `ORDER BY` · `TOP` · `YEAR` · `MONTH` · `INNER JOIN` · `LEFT JOIN`
 
 ## Repository Structure
 
@@ -22,10 +22,7 @@ SQL/
 ├── README.md
 ├── 01-flo-sql-case-study/
 │   ├── README.md
-│   ├── flo_case_study.sql
-│   └── assets/
-│       ├── flo-northwind-overview.jpg
-│       └── flo-data-dictionary.jpg
+│   └── flo_case_study.sql
 └── 02-northwind-join-practice/
     ├── README.md
     └── northwind_join_practice.sql
